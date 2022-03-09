@@ -48,7 +48,7 @@ def generate_keys(ckey):
     if n == len(pkey):
         possible_keys.append(ckey)
         return
-    pn = chr_to_num[pkey[n - 1]]
+    pn = chr_to_num[pkey[n]]
     generate_keys(ckey + num_to_chr[pn/2])
     generate_keys(ckey + num_to_chr[(pn + 26)/2])
 
